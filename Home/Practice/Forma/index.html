@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <style>
+        span {
+            color: red;
+        }
+
+        .a {
+            width: 25%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+        <table style="margin: auto; width: 40%;">
+            <tr>
+                <td>
+                    <h1>Форма заявки на работу в зоопарке</h1>
+                    <p style="font-size: small; font-style: italic;">Пожалуйста, заполните форму.
+                        Обязательные поля помечены<span> *</span></p>
+                    <fieldset>
+                        <legend>Контактная информация</legend>
+                        <label>Имя <span>*</span><input type="text" name="Name" size="30" maxlength="20" required
+                                pattern="^[А-Яа-яЁё]+$"></label>
+                        <br>
+                        <label>Телефон <input type="text" name="Telephone" size="30"
+                                pattern="^((\+375-)+([0-9]{2}-)+([0-9]{7}))$"></label>
+                        <br>
+                        <label>Email <span>*</span> <input type="email" name="Email" size="30" required
+                                pattern="^(([A-z0-9\W])+@([A-z0-9]+\.)+([A-z]{2,4}))$"></label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Персональная информация</legend>
+                        <label>Возраст <span>*</span> <input type="number" name="Age" min="16" max="60"
+                                required></label>
+                        <br>
+                        <label>Пол
+                            <select name="Floor">
+                                <option>Мужчина</option>
+                                <option>Женщина</option>
+                            </select>
+                        </label>
+                        <br>
+                        <label> Перечислите личные качества <textarea name="Characteristics"></textarea></label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Выберите ваших любимых животных</legend>
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="check[]" value="1"> Зебра
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="check[]" value="2"> Кошак
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="check[]" value="3"> Анаконда
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="check[]" value="4"> Человек
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="check[]" value="5"> Слон
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="check[]" value="6"> Антилопа
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="check[]" value="7"> Голубь
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="check[]" value="8"> Краб
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br>
+                    <input type="submit" value="Отправить информацию">
+                    </th>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
