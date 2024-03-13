@@ -8,11 +8,12 @@
 
 <body>
 
-    <form action="http://fe.it-academy.by/TestForm.php" method="post">
 
-        <table align="center">
-            <tr>
-                <td width="700">
+
+    <table align="center">
+        <tr>
+            <td width="700">
+                <form action="http://fe.it-academy.by/TestForm.php" method="post">
                     <fieldset>
                         <legend>Строка поиска</legend>
                         <p>
@@ -24,8 +25,10 @@
                             <input type="radio" name="radio1" value="radio2"> в google
                         </p>
                     </fieldset>
-                </td>
-                <td  width="700">
+                </form>
+            </td>
+            <td width="700">
+                <form action="http://fe.it-academy.by/TestForm.php" method="post">
                     <fieldset>
                         <legend>Строка поиска</legend>
                         <p>
@@ -37,10 +40,12 @@
                             <input type="radio" name="radio2" value="radio2"> в google
                         </p>
                     </fieldset>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post">
                     <fieldset>
                         <legend>Авторизируйтесь</legend>
                         <p>
@@ -55,8 +60,10 @@
                         </p>
 
                     </fieldset>
-                </td>
-                <td>
+                </form>
+            </td>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post">
                     <fieldset>
                         <legend>Как вам?</legend>
                         <input type="radio" name="radio4" value="radio1"> ничего
@@ -70,22 +77,27 @@
                         <input type="submit" value="Отправить">
                         <input type="hidden" name="date_voite" value="2013.12.31">
                     </fieldset>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post">
                     <fieldset>
                         <legend>Оставьте Ваш отзыв</legend>
                         <p>
                             <input type="text" name="text5" required> * Имя
                         </p>
                         <p>
-                            <input type="email" name="text1" pattern="^(([A-z0-9\W])+@([A-z0-9]+\.)+([A-z]{2,4}))$" required> * e-mail
+                            <input type="email" name="text1" pattern="^(([A-z0-9\W])+@([A-z0-9]+\.)+([A-z]{2,4}))$"
+                                required> * e-mail
                         </p>
                         <input type="submit" value="Отправить">
                     </fieldset>
-                </td>
-                <td>
+                </form>
+            </td>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post">
                     <fieldset>
                         <legend>Город РБ</legend>
                         <select name="text6_1">
@@ -114,10 +126,12 @@
                         </select>
                         <input type="submit" value="Ок">
                     </fieldset>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post">
                     <fieldset>
                         <legend>Upload</legend>
                         <p>
@@ -130,7 +144,10 @@
                             <input type="submit" value="Загрузить">
                         </p>
                     </fieldset>
-                <td>
+                </form>
+            </td>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post">
                     <fieldset>
                         <legend>Строка поиска</legend>
                         <input type="text" name="text8_1" pattern="[А-Яа-яЁё].*">
@@ -140,16 +157,17 @@
                         +XXX-XX-XXXXXXX, где X - любое число
                         <br>
                         <input type="text" name="text8_2" pattern="^((\+375-)+([0-9]{2}-)+([0-9]{7}))$">
-                        <br>                        
+                        <br>
                         <input type="submit" value="Проверить">
                     </fieldset>
-                </td>
-                </td>
-            </tr>
+                </form>
 
-        </table>
+            </td>
+        </tr>
 
-    </form>
+    </table>
+
+
 
 </body>
 
