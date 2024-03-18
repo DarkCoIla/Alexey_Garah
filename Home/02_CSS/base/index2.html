@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Списки</title>
+    <style>
+        p {
+            background-color: black;
+            color: green;
+            width: 400px;
+            max-height: 4em;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="margin: auto; width: 20%;">
+        <tr>
+            <td>
+                <!-- Будет ли считат в этом случает втрой список вложенным элементом? Сделал так чтобы маркер был полужирным -->
+                <ul style="width: 350px;">
+                    <li style="list-style-type: upper-roman; font-weight: bold;">Контейнер с кодом</li>
+                        <ul>
+                            <li style="list-style-type: lower-roman;">Цвет фона: чёрный</li>
+                            <li style="list-style-type: lower-roman;">Цвет текста: зелёный</li>
+                            <li style="list-style-type: lower-roman;">Ширина: 400px</li>
+                            <li style="list-style-type: lower-roman;">Максимальная высота контейнера: 4-е строки</li>
+                            <li style="list-style-type: lower-roman;">Переполнение: автоматическое</li>
+                        </ul>                    
+                    <li style="list-style-type: upper-roman; font-weight: bold;">Список</li>
+                        <ul>
+                            <li style="list-style-type: lower-roman;">Ширина: 350px</li>
+                            <li style="list-style-type: lower-roman;">Тип списка: римсике цифры</li>
+                            <li style="list-style-type: lower-roman;">Тип вложенного списка: римские нижный регистр
+                                цифры
+                            </li>
+                        </ul>                    
+                </ul>
+                <p><code>
+                    #!/usr/bin/env python
+                    <br>
+                    print 'Hello. I am a python program.'
+                    <br>
+                    name = raw_input("What is your name?")
+                    <br>
+                    print "Hello there, " + name + "!"
+                </code></p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
