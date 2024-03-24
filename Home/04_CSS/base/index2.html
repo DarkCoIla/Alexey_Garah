@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .frame {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .table {
+            display: flex;
+            padding-top: 20px;
+        }
+
+        .basement {
+            text-align: center;
+            width: 100%;
+        }
+
+        li {
+            list-style: none;
+            border-bottom: 2px dotted;
+            
+        }
+
+        ul {
+            padding: 2px;                     
+                    
+        }
+
+
+        ul:first-child {
+            font-weight: bold;
+            
+        }
+
+        li:nth-child(odd) {
+            background-color: gainsboro;
+           
+        }             
+
+        ul li:first-child {
+            background-color: gray;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+        }
+        li:hover{
+            background-color: darkgray;
+        }                
+          
+    </style>  
+
+</head>
+
+<body>
+    <div class="frame">
+        <div class="table">
+            <ul>
+                <li>ФИО</li>
+                <li>Иванов Иван Иванович</li>
+                <li>Петрова Илонна Петровна</li>
+                <li>Сидоров илья Игоревич</li>
+                <li>Пупин Фёдор Фёдорович</li>
+                <li>Крупин Сергей Иванович</li>
+            </ul>
+            <ul>
+                <li>Пол</li>
+                <li>М</li>
+                <li>Ж</li>
+                <li>М</li>
+                <li>М</li>
+                <li>М</li>
+            </ul>
+            <ul>
+                <li>Должность</li>
+                <li>начальник</li>
+                <li>секретарь</li>
+                <li>бухгалтер</li>
+                <li>водитель</li>
+                <li>водитель 2</li>
+            </ul>
+            <ul>
+                <li>Дата рож.</li>
+                <li>01.01.1960</li>
+                <li>01.01.1989</li>
+                <li>01.01.1979</li>
+                <li>01.01.1963</li>
+                <li>01.01.1983</li>
+            </ul>
+            <ul>
+                <li>Данные 01</li>
+                <li>4567</li>
+                <li>98795</li>
+                <li>743434</li>
+                <li>74323434</li>
+                <li>3234534</li>
+            </ul>
+            <ul>
+                <li>Данные 02</li>
+                <li>3453</li>
+                <li>46523</li>
+                <li>987979</li>
+                <li>9232379</li>
+                <li>923123379</li>
+            </ul>
+        </div>
+        <div class="basement">ДАННЫЕ О СОТРУДНИКАХ</div>
+    </div>
+</body>
+
+</html>
