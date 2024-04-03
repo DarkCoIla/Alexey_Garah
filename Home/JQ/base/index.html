@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 1000px;
+            text-align: center;
+            margin-top: 40px;
+            margin-left: 20px;
+
+        }
+
+        td {
+            border: 2px dotted;
+        }
+
+        tr:nth-child(odd) {
+            background-color: gainsboro;
+        }
+
+        th {
+            border-top: 3px dotted black;
+            background-color: gray;
+            color: aliceblue;
+                        
+        }
+
+        th:first-child {
+            border-left: 3px dotted black;
+        }
+
+        th:last-child {
+            border-right: 3px dotted black;
+        }
+
+        td:first-child {
+            border-left: 3px dotted;
+            text-align: left;
+        }
+
+        td:last-child {
+            border-right: 3px dotted;
+        }
+
+        tr:last-child td {
+            background-color: white;
+            border: 0px;
+            border-top: 3px dotted;
+            text-align: center;
+        }
+
+        .button {
+            margin-left: 20px;
+            height: 40px;
+            width: 150px;
+            background-color: rgb(83, 135, 231);
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th>
+                ФИО
+            </th>
+            <th>
+                Пол
+            </th>
+            <th>
+                Должность
+            </th>
+            <th>
+                Дата рож.
+            </th>
+            <th>
+                Данные 1
+            </th>
+            <th>
+                Данные 2
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Иванов Иван Иванович
+            </td>
+            <td>
+                М
+            </td>
+            <td>
+                Начальник
+            </td>
+            <td>
+                01.01.1960
+            </td>
+            <td>
+                4567
+            </td>
+            <td>
+                3453
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Петрова Илонна Петровна
+            </td>
+            <td>
+                Ж
+            </td>
+            <td>
+                Секретарь
+            </td>
+            <td>
+                01.01.1989
+            </td>
+            <td>
+                98795
+            </td>
+            <td>
+                46523
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Сидоров илья Игоревич
+            </td>
+            <td>
+                М
+            </td>
+            <td>
+                Бухгалтер
+            </td>
+            <td>
+                01.01.1979
+            </td>
+            <td>
+                743434
+            </td>
+            <td>
+                987979
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Пупин Фёдор Фёдорович
+            </td>
+            <td>
+                М
+            </td>
+            <td>
+                Водитель
+            </td>
+            <td>
+                01.01.1963
+            </td>
+            <td>
+                74323434
+            </td>
+            <td>
+                9232379
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Крупин Сергей Иванович
+            </td>
+            <td>
+                М
+            </td>
+            <td>
+                Водитель 2
+            </td>
+            <td>
+                01.01.1983
+            </td>
+            <td>
+                3234534
+            </td>
+            <td>
+                923123379
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6">
+                ДАННЫЕ О СОТРУДНИКАХ
+            </td>
+        </tr>
+    </table>
+    <button class="button">
+        Нет скрытых строк
+    </button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function ($) {
+
+            $('tr').click(function () {
+                $(this).hide(300)
+                $('button').text("Показать все строки")
+            });
+            $('.button').click(function () {
+                $('tr').show(300)
+                $('button').text("Нет скрытых строк")
+            });           
+        });
+    </script>
+</body>
+
+</html>
